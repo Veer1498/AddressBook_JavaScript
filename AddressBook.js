@@ -112,11 +112,16 @@ class Contact{
     }
 }
 
+let addressBookArray = new Array();
 try{
-    let contact = new Contact("Veer", "Singa","gdhdgsd", "Vijayawada", "Andhra", 521235, "91 7989220447", "veere@gmail.com");
-
-    console.log(contact.toString());
+    addressBookArray.push(new Contact("Veer", "Singa","gdhdgsd", "Vijayawada", "Andhra", 521235, "91 7989220447", "veere@gmail.com"));
+    
+}catch(e){
+    console.error(e);
 }
-catch(e){
-    console.log(e);
+try{
+    addressBookArray.push(new Contact("Veer", "Singa","gdhdgsd", "Vijayawada", "Andhra", 521235, "91 7989220447", "veere@gmail.com"));
+}catch(e){
+    console.error(e);
 }
+console.log(addressBookArray);
